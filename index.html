@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator IP & IPK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator IP dan IPK</h1>
+        
+        <!-- Kalkulator IP -->
+        <div class="calculator" id="ipCalculator">
+            <h2>Kalkulator IP</h2>
+            <div class="ip-boxes" id="ipRows">
+                <!-- Default rows will be added here -->
+            </div>
+            <button class="add-row-btn" onclick="addIPRow()">Tambah Baris</button>
+            <button class="calculate-btn" onclick="calculateIP()">Hitung IP</button>
+            <p id="ipResult">IP: 0.00</p>
+        </div>
+
+        <hr>
+
+        <!-- Kalkulator IPK -->
+        <div class="calculator" id="ipkCalculator">
+            <h2>Kalkulator IPK</h2>
+            <div class="ipk-boxes" id="ipkRows">
+                <!-- Default rows will be added here -->
+            </div>
+            <button class="add-row-btn" onclick="addIPKRow()">Tambah Baris</button>
+            <button class="calculate-btn" onclick="calculateIPK()">Hitung IPK</button>
+            <p id="ipkResult">IPK: 0.00</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
